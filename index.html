@@ -3,182 +3,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BRICS Coin (BRX) - Official Website</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRICS Coin (BRX)</title>
   <style>
-    * {
-      margin: 0; padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('images/bg1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
     }
-    body, html {
-      height: 100%;
-      overflow-x: hidden;
-    }
-    .background-slider {
-      position: fixed;
-      z-index: -1;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-    }
-    .background-slider img {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      animation: slideShow 24s infinite;
-      opacity: 0;
-    }
-    .background-slider img:nth-child(1) { animation-delay: 0s; }
-    .background-slider img:nth-child(2) { animation-delay: 8s; }
-    .background-slider img:nth-child(3) { animation-delay: 16s; }
-
-    @keyframes slideShow {
-      0% { opacity: 0; }
-      10% { opacity: 1; }
-      30% { opacity: 1; }
-      40% { opacity: 0; }
-      100% { opacity: 0; }
-    }
-
-    header {
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: #fff;
-      text-align: center;
-    }
-
-    .section {
-      padding: 50px 20px;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.6);
-      margin: 20px;
-      border-radius: 12px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 10px 0;
-      color: #fff;
-      background: #ff9800;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #e68900;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    footer {
-      padding: 20px;
-      background-color: #111;
-      color: #ccc;
-      text-align: center;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 6px;
-      border: none;
-    }
-
-    .form-box {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .verified-badge {
-      background: green;
+    .overlay {
+      background-color: rgba(0,0,0,0.5);
       color: white;
-      padding: 6px 10px;
-      border-radius: 6px;
-      display: inline-block;
-      font-size: 14px;
-      margin-left: 10px;
+      padding: 2rem;
+      text-align: center;
     }
   </style>
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-
-  <div class="background-slider">
-    <img src="https://source.unsplash.com/1920x1080/?blockchain" alt="bg1">
-    <img src="https://source.unsplash.com/1920x1080/?technology" alt="bg2">
-    <img src="https://source.unsplash.com/1920x1080/?finance" alt="bg3">
+  <div class="overlay">
+    <h1>Welcome to BRICS Coin (BRX)</h1>
+    <p>Website with image background is live!</p>
   </div>
-
-  <header>
-    <h1>BRICS Coin (BRX)</h1>
-    <p>The Future of Decentralized Finance</p>
-    <div class="verified-badge">✔ Verified Contract</div>
-  </header>
-
-  <section class="section">
-    <h2>About BRICS Coin</h2>
-    <p>BRICS Coin (BRX) is a revolutionary digital asset created to empower the global South with a community-driven, secure, and borderless currency. Built on the Binance Smart Chain, BRX aims to support financial inclusion, trade, and stability across BRICS nations and beyond.</p>
-  </section>
-
-  <section class="section">
-    <h2>Token Distribution</h2>
-    <ul>
-      <li>✅ Public Airdrop: 15%</li>
-      <li>💧 Liquidity Pool: 35%</li>
-      <li>🔐 Team & Development: 25%</li>
-      <li>🌐 Marketing & Ecosystem: 20%</li>
-      <li>🎁 Reserve: 5%</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Contract Details</h2>
-    <p><strong>Token Name:</strong> BRICS Coin</p>
-    <p><strong>Symbol:</strong> BRX</p>
-    <p><strong>Verified Contract:</strong> <a href="https://bscscan.com/token/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank">0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B</a></p>
-    <a href="https://pancakeswap.finance/swap?outputCurrency=0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank" class="btn">Buy on PancakeSwap</a>
-    <a href="https://github.com/BRXCoin-maker/brx-website/blob/main/BRX-Whitepaper.pdf" target="_blank" class="btn">📄 Whitepaper</a>
-  </section>
-
-  <section class="section">
-    <h2>Join Airdrop</h2>
-    <div class="form-box">
-      <form action="https://formspree.io/f/xwkgygdg" method="POST">
-        <label>Your BSC Wallet Address:</label>
-        <input type="text" name="wallet" required />
-        <label>Your Email (optional):</label>
-        <input type="email" name="email" />
-        <label>Why do you support BRICS Coin?</label>
-        <textarea name="message" rows="4" placeholder="Write something..."></textarea>
-        <button class="btn" type="submit">Submit Airdrop Form</button>
-      </form>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Follow Us</h2>
-    <div class="social-links">
-      <a href="https://facebook.com/BRXCoinOfficial" target="_blank">📘 Facebook</a>
-      <a href="https://x.com/BRICS_BRXcoin" target="_blank">🐦 Twitter (X)</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 BRICS Coin (BRX). All rights reserved.</p>
-    <p>Team: BRICS Coin Development • Contact: brxcoin.official@gmail.com</p>
-  </footer>
-
 </body>
 </html>
