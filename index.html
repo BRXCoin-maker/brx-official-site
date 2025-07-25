@@ -2,73 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BRICS Coin (BRX) – Official Website</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #0d1b2a;
+      color: #ffffff;
+    }
+    header {
+      background: #1b263b;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    nav a {
+      color: #64ffda;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero {
+      background: url('background.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 3em;
+    }
+    .airdrop-section input, .airdrop-section button {
+      padding: 10px;
+      margin: 8px;
+      width: 90%;
+      max-width: 400px;
+    }
+    .airdrop-section button {
+      background-color: #64ffda;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .footer {
+      background: #1b263b;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .btn {
+      background-color: #64ffda;
+      color: #000;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin: 10px;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="hero">
-    <div class="overlay">
-      <h1>BRICS Coin (BRX)</h1>
-      <p>The Future of Global Crypto – Powered by Unity</p>
-      <div class="cta-buttons">
-        <a href="BRICS_Coin_Whitepaper.pdf" class="btn" download>📄 Download Whitepaper</a>
-        <a href="https://pancakeswap.finance/swap?outputCurrency=0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" class="btn" target="_blank">🛒 Buy on PancakeSwap</a>
-      </div>
-    </div>
+  <!-- Header -->
+  <header>
+    <h1>BRICS Coin (BRX)</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#airdrop">Airdrop</a>
+      <a href="#whitepaper">Whitepaper</a>
+      <a href="#buy">Buy</a>
+    </nav>
   </header>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#token">Token Info</a></li>
-      <li><a href="#airdrop">Airdrop</a></li>
-      <li><a href="BRICS_Coin_Whitepaper.pdf" download>Whitepaper</a></li>
-      <li><a href="https://bscscan.com/token/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank">BSCScan</a></li>
-      <li><a href="https://www.dextools.io/app/en/bnb/pair-explorer/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank">Live Chart</a></li>
-    </ul>
-  </nav>
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Building a Stronger Crypto Future<br>Across BRICS Nations</h2>
+    <p>Empowering decentralization. Empowering economies.</p>
+    <a class="btn" href="#airdrop">Join Airdrop</a>
+  </section>
 
+  <!-- About Section -->
   <section id="about">
-    <h2>About BRX Coin</h2>
-    <p>BRICS Coin (BRX) is a decentralized cryptocurrency created to support the growing collaboration among BRICS nations — Brazil, Russia, India, China, and South Africa. Built on Binance Smart Chain, BRX promotes borderless, fast, and secure transactions.</p>
+    <h2>About BRX</h2>
+    <p>
+      BRICS Coin (BRX) is a community-driven crypto initiative to promote decentralized finance among Brazil, Russia, India, China, and South Africa. BRX aims to provide utility, speed, and transparency with a vision to become the preferred token of the BRICS region and beyond.
+    </p>
   </section>
 
-  <section id="token">
-    <h2>Token Information</h2>
-    <ul>
-      <li><strong>Name:</strong> BRICS Coin</li>
-      <li><strong>Symbol:</strong> BRX</li>
-      <li><strong>Blockchain:</strong> Binance Smart Chain (BSC)</li>
-      <li><strong>Total Supply:</strong> 1,000,000 BRX</li>
-      <li><strong>Verified Contract:</strong> ✅ <a href="https://bscscan.com/token/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank">View on BSCScan</a></li>
-    </ul>
-
-    <h3>Distribution</h3>
-    <ul>
-      <li>15% – Public Airdrop</li>
-      <li>35% – Liquidity Pool</li>
-      <li>50% – Reserved Supply</li>
-    </ul>
-  </section>
-
-  <section id="airdrop">
-    <h2>Claim Airdrop</h2>
-    <form action="mailto:brxcoin.official@gmail.com" method="POST" enctype="text/plain">
+  <!-- Airdrop Form Section -->
+  <section id="airdrop" class="airdrop-section">
+    <h2>Claim Your BRX Airdrop</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="wallet" placeholder="Your Wallet Address (BEP-20)" required />
-      <button type="submit">Submit Airdrop Request</button>
+      <input type="text" name="wallet" placeholder="Your BEP-20 Wallet Address" required />
+
+      <!-- 🔐 Wallet Safety Warning -->
+      <p style="color: red; font-weight: bold; font-size: 14px;">
+        🔒 Use only BEP-20 wallet address (MetaMask / Trust Wallet / SafePal).<br>
+        ❌ Do not enter Binance, WazirX or any exchange address — your airdrop will not be received.
+      </p>
+
+      <button type="submit">Claim Airdrop</button>
     </form>
   </section>
 
-  <footer>
-    <p>© 2025 BRICS Coin (BRX) – All rights reserved</p>
-    <p>Contact: <a href="mailto:brxcoin.official@gmail.com">brxcoin.official@gmail.com</a></p>
-    <p>Made by BRICS Team</p>
-  </footer>
+  <!-- Whitepaper Section -->
+  <section id="whitepaper">
+    <h2>Whitepaper</h2>
+    <p>Read our full vision and technical strategy in the whitepaper.</p>
+    <a class="btn" href="BRICS_Coin_Whitepaper.pdf" download>Download Whitepaper</a>
+  </section>
+
+  <!-- Buy Section -->
+  <section id="buy">
+    <h2>Buy BRX</h2>
+    <p>Trade BRX on PancakeSwap (BSC Network)</p>
+    <a class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank">Buy on PancakeSwap</a>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 BRICS Coin – All rights reserved.</p>
+    <p>Official Email: brxcoin.official@gmail.com</p>
+    <p>Telegram | X (Twitter): <a href="https://x.com/BRICS_BRXcoin" style="color: #64ffda;">@BRICS_BRXcoin</a></p>
+    <p>Contract: <a href="https://bscscan.com/token/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank" style="color: #64ffda;">View on BscScan</a></p>
+  </div>
 
 </body>
-</html> 
+</html>
