@@ -3,68 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BRX Coin Official</title>
+  <title>BRICS Coin (BRX) - Official</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
-<body style="margin:0; font-family:sans-serif; background-color:#000; color:#fff;">
-
-  <!-- Hero Section with Video -->
-  <section style="position: relative; height: 100vh; overflow: hidden;">
-    <video autoplay muted loop playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-      <source src="brx-background.mp4" type="video/mp4" />
+<body>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="your-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
-    <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;">
-      <h1 style="font-size: 60px; font-weight: bold;">🚀 BRX COIN</h1>
-      <p style="font-size: 24px; max-width: 600px;">Empowering the BRICS crypto revolution with BRX — the future of decentralized finance.</p>
-      <a href="BRICS-Coin-Whitepaper.pdf" download style="margin-top: 20px; padding: 12px 28px; background: #ffc107; color: #000; font-weight: bold; border-radius: 8px; text-decoration: none;">
-        📄 Download Whitepaper
-      </a>
+    <div class="hero-content">
+      <img src="your-image.jpg" alt="BRX Coin Logo" class="hero-logo"/>
+      <h1>Welcome to BRICS Coin (BRX)</h1>
+      <p>Uniting Brazil, Russia, India, China, and South Africa through blockchain innovation.</p>
+      <a href="BRX-Whitepaper.pdf" target="_blank" class="btn">📄 Download Whitepaper</a>
     </div>
   </section>
 
-  <!-- Token Info -->
-  <section style="padding: 50px; text-align: center; background-color: #111;">
-    <h2 style="font-size: 36px;">🔗 Token Details</h2>
-    <p>Total Supply: <strong>1,000,000 BRX</strong></p>
-    <p>Buy Tax: 3% | Sell Tax: 7%</p>
-    <p>Contract Address:</p>
-    <p style="font-family: monospace; color: #ffc107;">0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B ✅</p>
-    <a href="https://pancakeswap.finance/swap?outputCurrency=0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank" style="display:inline-block; margin-top:20px; background:#00c853; color:#fff; padding:14px 30px; border-radius:10px; text-decoration:none;">
-      🛒 Buy on PancakeSwap
-    </a>
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <h2>About BRICS Coin (BRX)</h2>
+    <p>BRICS Coin (BRX) is a decentralized cryptocurrency inspired by the collaboration of the BRICS nations: Brazil, Russia, India, China, and South Africa. Established to promote financial cooperation, the BRICS alliance holds annual summits discussing global development, trade, and multipolar governance. BRX aims to offer a unified digital asset for cross-border use among these emerging markets.</p>
   </section>
 
-  <!-- DEX Live Chart -->
-  <section style="padding: 40px; text-align: center; background-color: #000;">
-    <h2 style="font-size: 32px;">📊 BRX Live Chart</h2>
-    <iframe src="https://dexscreener.com/bsc/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" style="width: 100%; height: 600px; border: none; margin-top: 20px;"></iframe>
+  <!-- TOKENOMICS SECTION -->
+  <section class="tokenomics">
+    <h2>Tokenomics</h2>
+    <ul>
+      <li><strong>Symbol:</strong> BRX</li>
+      <li><strong>Total Supply:</strong> 1,000,000 BRX</li>
+      <li><strong>Decimals:</strong> 18</li>
+      <li><strong>Buy Tax:</strong> 3%</li>
+      <li><strong>Sell Tax:</strong> 7%</li>
+      <li><strong>Verified Contract:</strong> <a href="https://bscscan.com/address/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" target="_blank">0x537b...0b9B ✅</a></li>
+    </ul>
   </section>
 
-  <!-- Airdrop Form -->
-  <section id="airdrop" style="padding: 50px; text-align: center; background: linear-gradient(#f9f9f9, #e0e0e0); color: #000;">
-    <h2 style="font-size: 36px; margin-bottom: 20px;">🪂 BRX COIN AIRDROP FORM</h2>
-    <p style="font-size: 18px; margin-bottom: 30px;">Fill in your details to receive free BRX Coins.<br>Only MetaMask BNB wallet addresses (BEP-20) are accepted.</p>
+  <!-- DISTRIBUTION SECTION -->
+  <section class="distribution">
+    <h2>Token Distribution</h2>
+    <ul>
+      <li>🔹 40% Airdrop & Community</li>
+      <li>🔹 30% Liquidity & Exchanges</li>
+      <li>🔹 15% Development & Marketing</li>
+      <li>🔹 10% BRICS Strategic Reserve</li>
+      <li>🔹 5% Team (Locked)</li>
+    </ul>
+  </section>
 
-    <form action="https://formspree.io/f/xrblqzrk" method="POST" style="max-width: 500px; margin: auto;">
-      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 14px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px;">
-      <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 14px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px;">
-      <input type="text" name="wallet" placeholder="Your MetaMask BNB Wallet Address" required style="width: 100%; padding: 14px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px;">
-      <button type="submit" style="background-color: #ffc107; color: #000; padding: 16px 30px; border: none; border-radius: 10px; font-size: 18px; font-weight: bold; cursor: pointer;">
-        🚀 Submit & Claim Airdrop
-      </button>
+  <!-- LIVE CHART -->
+  <section class="chart">
+    <h2>Live BRX Chart</h2>
+    <iframe src="https://poocoin.app/tokens/0x537b5E7Ff9e72845037Ae81c1aBC64DA2abf0b9B" width="100%" height="400" style="border:0;"></iframe>
+  </section>
+
+  <!-- AIRDROP FORM -->
+  <section class="airdrop">
+    <h2>Join the Airdrop</h2>
+    <form action="https://formspree.io/f/xrblqzrk" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="wallet" placeholder="Your BSC Wallet Address" required />
+      <button type="submit" class="btn">🚀 Claim Airdrop</button>
     </form>
   </section>
 
-  <!-- Footer -->
-  <footer style="background-color: #111; color: #ccc; text-align: center; padding: 30px;">
-    <p>🔗 Follow Us</p>
-    <p>
-      <a href="https://x.com/BRICS_BRXcoin" target="_blank" style="color: #1da1f2; text-decoration: none; margin: 0 10px;">Twitter/X</a> |
-      <a href="https://facebook.com/BRXCoinOfficial" target="_blank" style="color: #1877f2; text-decoration: none; margin: 0 10px;">Facebook</a>
+  <!-- FOOTER -->
+  <footer>
+    <p>🌐 Follow us: 
+      <a href="https://www.facebook.com/BRXCoinOfficial" target="_blank">Facebook</a> | 
+      <a href="https://x.com/BRICS_BRXcoin" target="_blank">X (Twitter)</a>
     </p>
-    <p>📧 Email: <a href="mailto:brxcoin.official@gmail.com" style="color: #ffc107;">brxcoin.official@gmail.com</a></p>
-    <p>© 2025 BRX Coin Team. All rights reserved.</p>
+    <p>📩 Contact: brxcoin.official@gmail.com</p>
+    <p>© 2025 BRICS Coin Team</p>
   </footer>
-
 </body>
 </html>
