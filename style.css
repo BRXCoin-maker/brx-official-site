@@ -75,40 +75,6 @@ ul li {
   padding: 8px 0;
 }
 
-/* FORM INPUTS - not used with Google Form but left if needed later */
-input, button {
-  padding: 12px;
-  margin: 8px;
-  width: 80%;
-  max-width: 400px;
-  border: none;
-  border-radius: 8px;
-}
-
-input {
-  background-color: #222;
-  color: #fff;
-}
-
-button {
-  background-color: #00ccff;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #00aacc;
-}
-
-/* FOOTER */
-footer {
-  background-color: #000;
-  color: #999;
-  padding: 20px;
-  font-size: 14px;
-}
-
 /* GOOGLE FORM EMBED */
 .gform-container {
   width: 100%;
@@ -132,4 +98,12 @@ footer {
   .gform-container iframe {
     height: 1200px;
   }
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #999;
+  padding: 20px;
+  font-size: 14px;
 }
